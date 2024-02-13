@@ -10,3 +10,37 @@ C. Piccardi, Metrics for network comparison using egonet feature distribution, S
 
 ![image](https://github.com/CarloPiccardi/EgoDist-a-measure-for-comparing-networks/assets/159918290/b260515d-cd26-4424-a5b3-8a4e2d48f91c)
 
+# Usage
+
+
+function distance = EgoDist(A1,A2,delta,cap,DistanceType)
+
+INPUTS:
+
+A1,A2: Binary undirected adjacency matrices (possibly with different size)
+
+delta: discretization interval for discrete distributions (0<delta<1)
+
+cap: upper bound for discrete distributions (0<cap<=1, cap>>delta)
+
+DistanceType: {'D','C','P','SUM','CP','DC','DP','DCP'}
+
+[Note: To speed up computations, no check is performed on the correctness and consistency of the inputs.]
+
+OUTPUT:   
+
+distance: distance between networks A1, A2
+
+Example of usage (the two nets are distributed in the folder "networks"):
+
+load('net_SFBA_n1000_d000_1.mat'); A1=A; %loading A1
+
+load('net_GEO_n2000_d000_10.mat'); A2=A; %loading A2
+
+distance=EgoDist(A1,A2,0.01,1,'DCP')
+
+distance =
+
+   672.5809
+   
+ 

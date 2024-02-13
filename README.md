@@ -15,6 +15,7 @@ C. Piccardi, Metrics for network comparison using egonet feature distribution, S
 
 function distance = EgoDist(A1,A2,delta,cap,DistanceType)
 
+
 INPUTS:
 
 A1,A2: Binary undirected adjacency matrices (possibly with different size)
@@ -27,11 +28,14 @@ DistanceType: {'D','C','P','SUM','CP','DC','DP','DCP'}
 
 [Note: To speed up computations, no check is performed on the correctness and consistency of the inputs.]
 
+
 OUTPUT:   
 
 distance: distance between networks A1, A2
 
+
 Example of usage (the two nets are distributed in the folder "networks"):
+
 
 load('net_SFBA_n1000_d000_1.mat'); A1=A; %loading A1
 

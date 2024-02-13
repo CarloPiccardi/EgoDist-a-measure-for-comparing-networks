@@ -8,3 +8,5 @@ It does not require the alignment of the two networks being compared, which can 
 See the paper for more details:
 C. Piccardi, Metrics for network comparison using egonet feature distribution, Scientific Reports, 13, 14657, 2023, https://doi.org/10.1038/s41598-023-40938-4
 
+![image](https://github.com/CarloPiccardi/EgoDist-a-measure-for-comparing-networks/assets/159918290/b260515d-cd26-4424-a5b3-8a4e2d48f91c)
+
